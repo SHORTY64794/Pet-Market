@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Pet Market</title>
+    <!--Se enlaza este documento con el estilo proveniente del Bootstrap y recibe todo ese estilo indicado a continuación  (lineas 8 a la 13)-->
+    <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
+            crossorigin="anonymous"
+    />
+    <!--Se agrega para enlazar este documento con el archivo css y recibir todo el estilo insertado en ese archivo style.css contenido en la carpeta css -->
+    <link rel="stylesheet" href="css/style.css"/>
+</head>
+
+
+<body>
+<!--El nombre de esas clases son estilos del B.-->
+<!--da color negro a la barra horizontal superior o al navbar, es la línea traida de la pag de B-->
+<nav class="navbar navbar-dark bg-dark">
+    <!-- da color celeste claro -->
+    <!-- <nav class="navbar" style="background-color: #e3f2fd;">-->
+    <!--para crear la primera div o línea del navbar en todo el ancho de la pág-->
+    <div class="container-fluid">
+        <!--Establecemos un enlace (href). El # es xa q nos rederize la pág raiz o pag ppal nuestra-->
+        <a class="navbar-brand" href="#">
+            <img src="/icon/logo6.png" alt="" width="40" height="40" class="d-inline-block align-text-top">
+            Pet Market</a>
+        <div class="nav-buttons">
+            <button class="login-button" id="logeate-button">Logéate</button>
+        </div>
+    </div>
+</nav>
+
+<div class="login-container" id="login-container">
+    <div class="title-login">
+        <h1>Pet Market!</h1>
+        <p>Tu tienda de confianza!</p>
+    </div>
+
+    <div class="div-login">
+        <div  class="login-title">
+            <p>LOGUÉATE!</p>
+        </div>
+        <form method="POST" th:action="@{/login}">
+            <label class="inputs-login" for="nombre">Username</label>
+            <input type="text" name="nombre" id="nombre"/>
+            <br/>
+            <label class="inputs-login" for="password">Password</label>
+            <input type="password" name="password" id="password"/>
+
+            <input class="login-button" type="submit" value="Login"/>
+
+        </form>
+        <!-- <div class="login-inputContainer">
+            <input class="inputs-login" type="text" placeholder="Name">
+            <input class="inputs-login" type="password" placeholder="password">
+            <button class="login-button" id="login-button">LOGIN</button>
+        </div>
+        <div class="login-help">
+            <a href="#">Forgot password?</a>
+            <a href="#">Forgot user?</a>
+        </div> -->
+    </div>
+</div>
+<script>
+      const logeate_button = document.getElementById('logeate-button');
+      const login_button = document.getElementById('login-button');
+
+      logeate_button.addEventListener('click',showLogin ,true);
+      login_button.addEventListener('click', hideLogin , true);
+
+      function showLogin() {
+        const login_container = document.getElementById('login-container');
+        login_container.style.display = 'flex';
+      }
+
+      function hideLogin() {
+        const login_container = document.getElementById('login-container');
+        login_container.style.display = 'none';
+      }
+    </script>
+</body>
+</html>

@@ -13,15 +13,15 @@ public class TiendavirtualService {
     public List<Tiendavirtual> buscarDestacados() {
         List<Tiendavirtual> destacados = new ArrayList<>();
 
-        Tiendavirtual tienda=new Tiendavirtual();
+        Tiendavirtual tienda = new Tiendavirtual();
         tienda.setNombre("Esteras de descanso");
         tienda.setDescripcion("Hamiledyi Alfombra de reptil estera terrario sustrato Liner Ropa de cama Lizard Suministros de sustrato Jaula de reptiles.");        
         tienda.setImagenUrl("https://m.media-amazon.com/images/I/71OHW+FjjuL._AC_UL960_FMwebp_QL65_.jpg");
 
-
-        tienda.setNombre("Comedero Dosificador Doble Uso");
-        tienda.setDescripcion("Comedero dosificador doble uso ideal para tu mascota, tiene dos compartimientos para agua y comida, especialmente cuando tu mascota debe quedarse mucho tiempo sola en casa..");        
-        tienda.setImagenUrl("https://m.media-amazon.com/images/I/71GYpuVYDxL._AC_UL960_QL65_.jpg");
+        Tiendavirtual tienda1 = new Tiendavirtual();
+        tienda1.setNombre("Comedero Dosificador Doble Uso");
+        tienda1.setDescripcion("Comedero dosificador doble uso ideal para tu mascota, tiene dos compartimientos para agua y comida, especialmente cuando tu mascota debe quedarse mucho tiempo sola en casa..");
+        tienda1.setImagenUrl("https://m.media-amazon.com/images/I/71GYpuVYDxL._AC_UL960_QL65_.jpg");
 
 
         tienda.setNombre("Pelota Nudo Multicolor");
@@ -50,9 +50,9 @@ public class TiendavirtualService {
         tienda.setNombre("Removedor de Pelusa");
         tienda.setDescripcion("Rodillo removedor de pelusa multisuperficie para perros y gatos, ecológico y reutilizable.");        
         tienda.setImagenUrl("https://m.media-amazon.com/images/I/81zjo9UGQPL._AC_UL800_QL65_.jpg");
-        
 
-        
+        destacados.add(tienda);
+        destacados.add(tienda1);
         return destacados;
     }
     

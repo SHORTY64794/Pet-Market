@@ -1,6 +1,7 @@
 package com.proyectociclo3.tiendavirtual.domain;
 
 public class Tiendavirtual {
+
     private String nombre;
     private String descripcion;
     private String imagenUrl;
