@@ -1,0 +1,99 @@
+/* damos estilo a la img del card que se encuentra en la clase: tv-destacado*/
+
+
+.tv-destacados .card img {
+    height: 300px;
+    object-fit: cover; /*xa q la imagen no se desorganice o no quede cortada */
+} 
+    
+
+.tv-destacados .card {
+    height: 100%;    
+    
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav {
+    background-color: #1F2124;
+    height: 3rem;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    padding: 0.5rem;
+}
+
+.login-container {
+    display: none;
+    align-items: center;
+}
+
+.title-login {
+    width: auto;
+    margin: auto;
+    font-family:  'Montserrat', sans-serif;
+    font-size: 2rem;
+    text-align: left;
+    margin-left: 2rem;
+    color: #d0e03b;
+}
+
+.title-login h1 {
+    font-size: 4rem;
+    font-weight: 800;
+}
+
+.title-login p {
+    color: #000000;
+    font-size: 2rem;
+}
+
+.div-login { 
+    padding: 1rem;
+    height: 20rem;
+    width: 20rem;
+    border: 1px solid #000000;
+    font-family: 'Montserrat', sans-serif;
+    border-radius: 1rem;
+    background-color: #1F2124;
+    color: #FFFFFF;
+    text-align: center;
+    margin: 4rem 2rem;
+}
+
+.login-title p {
+    font-size: 2rem;
+}
+
+.login-inputContainer {
+    margin: 2rem auto;
+    width: min-content;
+}
+
+.inputs-login {
+    margin: 0 auto;
+    width: 15rem;
+    height: 1.8rem;
+    margin-top: 1rem;
+    border-radius: 1rem;
+    padding: 0.5rem;
+}
+
+.login-button {
+    margin: 1rem;
+    background-color: #d0e03b;
+    width: 5rem;
+    height: 2rem;
+    border-radius: 1rem;
+    color: #FFFFFF;
+    font-weight: bold;
+}
+
+.login-help a{
+    color: #FFFFFF;
+    margin: 0.5rem;
+    font-size: 0.8rem;
+}
